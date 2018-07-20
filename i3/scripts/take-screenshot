@@ -1,0 +1,12 @@
+#!/bin/bash
+
+case "$1" in
+    "whole")
+        scrot -e "xclip -selection c -t image/png \$f && mv \$f $2"
+        ;;
+    "region")
+        scrot -s -e "xclip -selection c -t image/png \$f && mv \$f $2"
+        ;;
+    *)
+        exit 1
+esac
