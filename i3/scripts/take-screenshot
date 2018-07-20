@@ -7,6 +7,9 @@ case "$1" in
     "region")
         scrot -s -e "xclip -selection c -t image/png \$f && mv \$f $2"
         ;;
+    "window")
+        scrot -u -e "xclip -selection c -t image/png \$f && mv \$f $2"
+        ;;
     *)
         exit 1
 esac
