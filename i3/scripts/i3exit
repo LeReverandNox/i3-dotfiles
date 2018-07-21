@@ -1,8 +1,12 @@
 #!/bin/sh
+
+OVERLAY=$(shuf -n1 -e ~/.config/i3/scripts/assets/lock/*.png)
+BG=/tmp/screen_locked.png
 lock() {
-    scrot /tmp/screen_locked.png
-    convert /tmp/screen_locked.png -scale 5% -scale 2000% /tmp/screen_locked.png
-    i3lock -fed -i /tmp/screen_locked.png
+    scrot $BG
+    convert $BG -scale 5% -scale 2000% $BG
+    convert $BG $OVERLAY -gravity SouthWest -composite $BG
+    i3lock -fed -i $BG
     # sleep 60; pgrep i3lock && xset dpms force off
 }
 
