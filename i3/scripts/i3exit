@@ -5,7 +5,7 @@ BG=/tmp/screen_locked.png
 lock() {
     scrot $BG
     convert $BG -scale 5% -scale 2000% $BG
-    convert $BG $OVERLAY -gravity SouthWest -composite $BG
+    [ -s "$OVERLAY" ] && convert $BG $OVERLAY -gravity SouthWest -composite $BG
     i3lock -fed -i $BG
     # sleep 60; pgrep i3lock && xset dpms force off
 }
