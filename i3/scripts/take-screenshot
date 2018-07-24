@@ -11,5 +11,6 @@ case "$1" in
         scrot -u -e "xclip -selection c -t image/png \$f && mv \$f $2"
         ;;
     *)
+        echo "Usage: $0 {whole|region|window} {output}"
         exit 1
 esac
