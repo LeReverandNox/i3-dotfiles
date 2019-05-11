@@ -1,10 +1,32 @@
 // vim:ts=4:sw=4:et
 {
-    // splith split container with 2 children
+    "border": "pixel",
+    "current_border_width": 15,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 674,
+       "width": 752,
+       "x": 0,
+       "y": 0
+    },
+    "name": "i3-dotfiles",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Emacs$",
+       "instance": "^emacs$",
+       "title": "*"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 3 children
     "border": "pixel",
     "floating": "auto_off",
-    "layout": "splith",
-    "percent": 1,
+    "layout": "splitv",
+    "percent": 0.5,
     "type": "con",
     "nodes": [
         {
@@ -12,100 +34,63 @@
             "current_border_width": 15,
             "floating": "auto_off",
             "geometry": {
-               "height": 977,
-               "width": 386,
-               "x": 857,
-               "y": 49
+               "height": 638,
+               "width": 282,
+               "x": 0,
+               "y": 0
             },
-            "name": "Visual Studio Code",
-            "percent": 0.5,
+          "name": "kitty",
+            "percent": 0.333333333333333,
             "swallows": [
                {
-               "class": "^Code$",
-               "instance": "^code$",
-               "title": ".*",
-               "transient_for": "^$",
-               "window_role": "^browser\\-window$"
+                 "class": "^kitty$",
+                 "instance": "^kitty$",
+                 "title": ".*"
                }
             ],
             "type": "con"
         },
         {
-            // splitv split container with 3 children
             "border": "pixel",
+            "current_border_width": 15,
             "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 15,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 977,
-                       "width": 799,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "kitty",
-                    "percent": 0.333333333333333,
-                    "swallows": [
-                       {
-                       "class": "^kitty$",
-                       "instance": "^kitty$",
-                       "title": ".*",
-                       "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 15,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 574,
-                       "width": 799,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "kitty",
-                    "percent": 0.333333333333333,
-                    "swallows": [
-                       {
-                       "class": "^kitty$",
-                       "instance": "^kitty$",
-                       "title": ".*",
-                       "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 15,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 574,
-                       "width": 799,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "kitty",
-                    "percent": 0.333333333333333,
-                    "swallows": [
-                       {
-                       "class": "^kitty$",
-                       "instance": "^kitty$",
-                       "title": ".*",
-                       "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
+            "geometry": {
+               "height": 638,
+               "width": 282,
+               "x": 0,
+               "y": 0
+            },
+            "name": "kitty",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^kitty$",
+                 "instance": "^kitty$",
+                 "title": ".*"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 15,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 638,
+               "width": 282,
+               "x": 0,
+               "y": 0
+            },
+            "name": "kitty",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^kitty$",
+                 "instance": "^kitty$",
+                 "title": ".*"
+               }
+            ],
+            "type": "con"
         }
     ]
 }
-
